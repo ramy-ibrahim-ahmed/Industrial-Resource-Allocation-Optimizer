@@ -1,2 +1,2 @@
-# PuLP
-Mathematical Optimization with the power of PuLP
+# linear programing
+Mathematical Optimization with the power of Python
