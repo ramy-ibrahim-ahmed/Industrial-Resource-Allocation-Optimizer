@@ -10,6 +10,7 @@
 
 import pulp
 import tkinter as tk
+from tkinter import messagebox
 
 
 def solve_production_plan():
@@ -18,11 +19,14 @@ def solve_production_plan():
     chairs = pulp.LpVariable("Chairs", lowBound=0, cat="Integer")
     tables = pulp.LpVariable("Tables", lowBound=0, cat="Integer")
 
-    chair_profit = int(chair_profit_entry.get())
-    table_profit = int(table_profit_entry.get())
-    labor_hours_available = int(labor_entry.get())
-    wood_available = int(wood_entry.get())
-    steel_available = int(steel_entry.get())
+    try:
+        chair_profit = int(chair_profit_entry.get())
+        table_profit = int(table_profit_entry.get())
+        labor_hours_available = int(labor_entry.get())
+        wood_available = int(wood_entry.get())
+        steel_available = int(steel_entry.get())
+    except:
+        messagebox.showerror("Error", f"An error occurred: Invalid entry provided :(")
 
     profit_per_chair = chair_profit
     profit_per_table = table_profit
