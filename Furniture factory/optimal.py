@@ -6,7 +6,6 @@
 # Chairs:    2 hours         4 units of wood         1 unit of steel.
 # Tables:    3 hours         6 units of wood         3 units of steel.
 
-# The profit is $5 per chair and $8 per table.
 
 import pulp
 import tkinter as tk
@@ -20,16 +19,14 @@ def solve_production_plan():
     tables = pulp.LpVariable("Tables", lowBound=0, cat="Integer")
 
     try:
-        chair_profit = int(chair_profit_entry.get())
-        table_profit = int(table_profit_entry.get())
+        profit_per_chair = int(chair_profit_entry.get())
+        profit_per_table = int(table_profit_entry.get())
         labor_hours_available = int(labor_entry.get())
         wood_available = int(wood_entry.get())
         steel_available = int(steel_entry.get())
     except:
         messagebox.showerror("Error", f"An error occurred: Invalid entry provided :(")
 
-    profit_per_chair = chair_profit
-    profit_per_table = table_profit
     problem += profit_per_chair * chairs + profit_per_table * tables
 
     problem += 2 * chairs + 3 * tables <= labor_hours_available
