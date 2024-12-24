@@ -1,11 +1,11 @@
 # 🏭 Industrial Resource Allocation Optimizer
 
-## 🌟 Project Overview
+## Project Overview
 The **Industrial Resource Allocation Optimizer** is a solution designed to help businesses in the furniture industry optimize their production processes. By leveraging **Linear Programming** and the **PuLP** library, this tool calculates the optimal quantities of two products—chairs and tables—to maximize profits while considering constraints on available resources such as labor hours, wood, and steel. The tool is equipped with a simple and intuitive **Tkinter** user interface to facilitate easy input and visualization of the results.
 
 This tool is ideal for manufacturers or production planners seeking to streamline their operations and make data-driven decisions to maximize profitability.
 
-## 🔍 Problem Description
+## Problem Description
 
 A company produces two types of products: **chairs** and **tables**, and has the following resource constraints:
 - **Labor hours**: Limited total number of hours available for production.
@@ -24,7 +24,7 @@ A company produces two types of products: **chairs** and **tables**, and has the
 
 The goal is to determine how many **chairs** and **tables** should be produced to **maximize profit** while respecting the available resources.
 
-## 📈 Linear Programming Model
+## Linear Programming Model
 The optimization problem can be expressed as:
 
 Maximize:
@@ -39,12 +39,12 @@ Subject to:
 
 The solution provides the optimal production quantities for chairs and tables, as well as the total profit.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **PuLP**: A Python library for Linear Programming, used to model and solve the optimization problem.
 - **Tkinter**: A Python GUI library used to create the user interface for the tool.
 - **Python**: The core programming language for the solution.
 
-## 🎮 User Interface
+## User Interface
 The tool provides an easy-to-use GUI for entering the following input:
 - **Profit per Chair**: The profit earned for each chair produced.
 - **Profit per Table**: The profit earned for each table produced.
