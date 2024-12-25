@@ -17,6 +17,7 @@ A company produces two types of products: **chairs** and **tables**, and has the
 - **Steel**: Limited amount of steel available.
 
 ### Product Characteristics:
+
 - **Chairs**:  
   - Require 2 hours of labor
   - Require 4 units of wood
