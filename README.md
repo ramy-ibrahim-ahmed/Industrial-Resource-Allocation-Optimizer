@@ -1,8 +1,6 @@
 # 🏭 Industrial Resource Allocation Optimizer
 
-Solution designed to help businesses in the furniture industry optimize their production processes. By leveraging Linear Programming and the PuLP library, this tool calculates the optimal quantities of two products—chairs and tables—to maximize profits while considering constraints on available resources such as labor hours, wood, and steel. The tool is equipped with a simple and intuitive Tkinter user interface to facilitate easy input and visualization of the results.
-
-This tool is ideal for manufacturers or production planners seeking to streamline their operations and make data-driven decisions to maximize profitability.
+Solution designed to help businesses in the furniture industry optimize their production processes. By leveraging Linear Programming and the PuLP library, this tool calculates the optimal quantities of two products chairs and tables to maximize profits while considering constraints on available resources such as labor hours, wood, and steel. The tool is equipped with a simple and intuitive Tkinter user interface to facilitate easy input and visualization of the results. This tool is ideal for manufacturers or production planners seeking to streamline their operations and make data-driven decisions to maximize profitability.
 
 <img src="test.png" alt="img" width="400"/>
 
